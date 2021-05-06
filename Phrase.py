@@ -1,7 +1,10 @@
 class Phrase :
     
-    def __init__(self) :
-        self.phrase = ""
-
-    def Phrase1(self) :
-        self.phrase = 'Ta mère est tellement grosse que [Choississez votre réponse]'
+    def __init__(self, tour):
+        self.tour = tour
+        if tour=="1" :
+            self.phrase = "Ta mere est tellement grosse..."
+        if tour=="2" :
+            self.phrase = "Le matin ideale pour toi ? Cafe, douche et ..."
+        
+        
