@@ -5,3 +5,5 @@ class Attaque:
         self.dmg = rank
 
     def Damage_calcul(self):
+        list_dmg = [0,1,2]
+        
