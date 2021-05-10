@@ -37,17 +37,36 @@ class GAME :
                     j = j + 1
                     i = i + 1
                 
-                print("Veuillez choisir votre arme !")
-                Choice_user = input()
-                reponse = ""
-                if Choice_user == "1" :
-                    reponse = Phrasepropose.phrase + Motpropose.liste_mot[0]
-                    print(reponse)
-                if Choice_user == "2" :
-                    reponse = Phrasepropose.phrase + Motpropose.liste_mot[1]
-                    print(reponse)
-                if Choice_user == "3" :
-                    reponse = Phrasepropose.phrase + Motpropose.liste_mot[2]
-                    print(reponse)
+                print("Jouer 1 ! Veuillez choisir votre arme !")
+                Choice_user1 = input()
+                reponse1 = ""
+                if Choice_user1 == "1" :
+                    reponse1 = Phrasepropose.phrase + Motpropose.liste_mot[0]
+                    rank1 = Motpropose.rank[0]
+                    print(reponse1)
+                if Choice_user1 == "2" :
+                    reponse1 = Phrasepropose.phrase + Motpropose.liste_mot[1]
+                    print(reponse1)
+                if Choice_user1 == "3" :
+                    reponse1 = Phrasepropose.phrase + Motpropose.liste_mot[2]
+                    print(reponse1)
+                print("Jouer 2 ! A votre tour !")
+                Choice_user2 = input()
+                reponse2 = ""
+                if Choice_user2 == "1" :
+                    reponse2 = Phrasepropose.phrase + Motpropose.liste_mot[0]
+                    print(reponse2)
+                if Choice_user2 == "2" :
+                    reponse2 = Phrasepropose.phrase + Motpropose.liste_mot[1]
+                    print(reponse2)
+                if Choice_user2 == "3" :
+                    reponse2 = Phrasepropose.phrase + Motpropose.liste_mot[2]
+                    print(reponse2)
+                print("Voyons lequel d'entre vous a été le plus inspiré !")
+                print("Joueur 1 : " + reponse1)
+                blablabla
+                test
+                deuxieme  test
+                
 
         
