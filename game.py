@@ -73,5 +73,9 @@ class GAME :
                 print(Motpropose.liste_reponse[rank1])
                 print("Joueur 2 : " + reponse2)
                 print(Motpropose.liste_reponse[rank2])
+                self.joueur1.pv = self.joueur1.pv - int(rank2 + 1)
+                print(self.joueur1.pv)
+                self.joueur2.pv = self.joueur2.pv - int(rank1 + 1)
+                print(self.joueur2.pv)
 
         
