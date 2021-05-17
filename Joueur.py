@@ -1,3 +1,5 @@
+from Attaque import Attaque
+
 class Joueur : 
 
     def __init__(self, name) :
@@ -5,3 +7,5 @@ class Joueur :
         self.name = name
 
 
+
+   
