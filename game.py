@@ -13,16 +13,15 @@ class GAME :
 
     def Combat(self) :
         x = 0
-        print(self.joueur1.name + "VS" + self.joueur2.name)
+        print(self.joueur1.name + " VS " + self.joueur2.name)
         while(self.joueur1.pv > 0 and self.joueur2.pv > 0):
-    
+            x = x + 1
+            print("Tour " + str(x))
             print("Que voulez-vous faire ?")
             print("1 - Attaquer ?")
-            print("2 - Boire une potion")
             Choice_user = input()
 
             if Choice_user == "1" :
-                x = x + 1
                 random = str(randint(1,10))
                 Motpropose = Mot(random)
                 Phrasepropose = Phrase(random)
@@ -53,6 +52,12 @@ class GAME :
                 print("Voyons lequel d'entre vous a été le plus inspiré !")
                 print("Joueur 1 : " + reponse1)
                 print("Joueur 2 : " + reponse2)
+                if(int(rank1) > int(rank2)) :
+                    print(Motpropose.liste_reponse[int(rank1)] + " " + self.joueur1.name)
+                if(int(rank1) < int(rank2)) :
+                    print(Motpropose.liste_reponse[int(rank2)] + " " + self.joueur2.name)
+                if(int(rank1) == int(rank2)) :
+                    print(Motpropose.liste_reponse[int(rank2)] + " vous deux")
                 self.joueur1.pv = self.joueur1.pv - rank2 - 1
                 print(self.joueur1.pv)
                 self.joueur2.pv = self.joueur2.pv - rank1 - 1
